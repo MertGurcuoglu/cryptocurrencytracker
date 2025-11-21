@@ -6,11 +6,13 @@ This project is a web platform that allows users to track live exchange rates fr
 
 ## LIVE
 
-You can check out the live deployment here:
+> **⚠️ Update:** The backend services (hosted on AWS) are currently **paused** to avoid incurring costs after the Free Tier limit.
+>
+> While the [Vercel Frontend](https://mertgurcuoglucrypto.vercel.app) is accessible, it will not show live data without the backend running.
 
-**[https://mertgurcuoglucrypto.vercel.app](https://mertgurcuoglucrypto.vercel.app)**
-
-*Note: The backend is hosted on a free tier, so it may take a few seconds to "wake up" if it hasn't received requests recently.*
+👉 **To see the project in action:**
+1. Check the **[Screenshots](#-screenshots)** section below.
+2. Or run the project locally using **Docker** (see instructions below).
 
 ---
 
