@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM amazoncorretto:17
 
 WORKDIR /app
 COPY target/notification-service-0.0.1-SNAPSHOT.jar notification-service.jar
