@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
 import java.util.Map;
+//trigger manually
 
 @RestController
 @RequestMapping("/api/auth")
