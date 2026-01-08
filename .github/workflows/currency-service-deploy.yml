@@ -1,6 +1,7 @@
 name: Currency Service Deploy Pipeline
 
 on:
+  workflow_dispatch:
   push:
     branches: ["main"]
     paths:
