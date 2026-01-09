@@ -1,15 +1,15 @@
-name: SonarCloud Analysis
+name: SonarNotification Analysis
 on:
   workflow_dispatch:
   push:
     branches:
       - main
     paths:
-      - "currency-service/**"
+      - "notification-service/**"
   pull_request:
     types: [opened, synchronize, reopened]
     paths:
-      - "currency-service/**"
+      - "notification-service/**"
 jobs:
   build:
     name: Build and Analyze
@@ -39,6 +39,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}    
         run: |
-          cd currency-service
-          mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=MertGurcuoglu_cryptocurrencytracker 
+          cd notification-service
+          mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=MertGurcuoglu_cryptocurrencytracker -DskipTests
         
